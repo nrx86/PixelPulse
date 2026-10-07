@@ -136,5 +136,10 @@ form input:focus{
     background-color: #cddbc9;
 }
 
+.quick-picks button:focus {
+    outline: 2px solid #d47a45;
+    outline-offset: 2px;
+}
+
 
    
