@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f1e8;
+    color: #1f3326;
+}
+
+header{
+    padding: 50px 20px 30px;
+    text-align: center;
+    background-color: #183a2b;
+    color: #f4f1e8;
+}
+
+header h1{
+    margin:0 0 10px;
+    font-size: 3rem;
+}
+
+header p{
+    margin:0;
+    font-size: 1.1rem;
+}
+
+main{
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+form{
+    display: flex;
+    gap: 12px;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input{
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid #b7c7b8;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+form button{
+    padding: 14px 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d47a45;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-field{
+    flex:1;
+}
+
+.quick-picks{
+    margin-top: 40px;
+}
+
+.quick-picks p{
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.quick-picks button{
+    padding: 9px 16px;
+    margin-right: 8px;
+    border: 1px solid #9db39f;
+    border-radius: 20px;
+    background-color: #e3eadf;
+    color: #183a2b;
+    cursor: pointer;
+}
+
+section h2{
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+}
+
+section > p{
+    color: #5d6b60;
+    margin-bottom: 24px;
+}
+
+#results{
+    min-height: 200px;
+    border: 2px dashed #b7c7b8;
+    border-radius: 14px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;}
+
+form button:hover{
+    background-color: #b85f32;
+}
+
+@media (max-width: 600px){
+    form{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form button{
+        width: 100%;
+    }
+
+    header h1{
+        font-size: 2.3rem;
+    }
+}  
+
+form input:focus{
+    outline: none;
+    border-color: #d47a45;
+    box-shadow: 0 0 0 3px rgba(212, 122, 69, 0.15);
+}
+
+.quick-picks button:hover{
+    background-color: #cddbc9;
+}
+
+
+   

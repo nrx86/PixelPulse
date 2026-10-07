@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LensLab - Discover Visuals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LensLab</h1>
+        <p> Discover images that spark your next idea.</p>
+    </header>
+
+    <main>
+        <form>
+    <div class="search-field">
+        <label for="searchInput">Search for images</label>
+        <input type="text" id="searchInput" name="searchInput" placeholder="What do you want to see?">
+    </div>
+       
+    
+    <button type="submit" id="searchButton">Search</button>
+        </form> 
+        <div class="quick-picks">
+            <p>Explore a topic:</p>
+
+            <button type="button">Nature</button>
+            <button type="button">Cities</button>
+            <button type="button">Animals</button>
+            <button type="button">Space</button>
+
+        </div>
+    
+    <section>
+        <h2>Results</h2>
+        <p> Search to see results.</p>
+    
+        <div id="results"></div>
+    </section>
+    </main>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
